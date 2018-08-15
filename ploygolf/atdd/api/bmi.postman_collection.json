@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "338706cf-0161-400b-9313-adc5642b5935",
+		"name": "bmi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "height170weight50",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70b80f27-e5f9-4701-852f-298e4ffed35a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"BMI should be 17.30\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.bmi).to.eql(17.30);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"weight\": 50,\n\t\"height\": 170\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/bmi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bmi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "height170weight83",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d63a9be-900f-4c1b-8fe7-a93941a01cd4",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"BMI should be 28.72\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.bmi).to.eql(28.72);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"weight\": 83,\n\t\"height\": 170\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/bmi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bmi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "height158weight48",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c108703-c316-4eaf-a2ff-2de9977912e5",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"BMI should be 19.30\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.bmi).to.eql(19.30);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"weight\": 48,\n\t\"height\": 158\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/bmi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bmi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "height156weight60",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "79d2eea2-20bc-408d-9dcc-44c4cf3bf3fd",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"BMI should be 24.65\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.bmi).to.eql(24.65);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"weight\": 60,\n\t\"height\": 156\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/bmi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bmi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "height152weight75",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "02d075ba-15fb-4b16-8dd1-97572d2bb210",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"BMI should be 32.46\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.bmi).to.eql(32.46);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"weight\": 75,\n\t\"height\": 152\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/bmi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bmi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
